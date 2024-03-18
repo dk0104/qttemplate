@@ -15,7 +15,12 @@ signals:
 public:
     explicit SubController(QObject *parent = nullptr);
     bool status() const;
+
     void setStatus(bool status);
+
+    Q_INVOKABLE void play();
+    Q_INVOKABLE void stop();
+    Q_INVOKABLE void pause();
 
 private:
     bool m_status = true;

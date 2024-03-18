@@ -3,11 +3,17 @@ import QtQuick.Controls
 import Moda
 
 Item {
-    Button {
-        id: _testBotoon
-        text: "Test1"
-        onClicked: {
-            _subController.status = true
+
+    Row {
+        Button {
+            id: _testBotoon
+            text: "Test1"
+            onClicked: {
+                _subController.status = true
+            }
+        }
+        Button {
+
         }
     }
 

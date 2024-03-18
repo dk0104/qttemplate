@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 4
+  },
+  "configurePresets": [
+    {
+      "name": "x64-gcc-Release",
+      "displayName": "gcc Release",
+      "description": "Build release on unix based systems",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "PACKAGE_TESTS": "OFF"
+      }
+    },
+    {
+      "name": "x64-gcc-Debug",
+      "displayName": "gcc Debug",
+      "description": "Build debug on unix based systems",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "PACKAGE_TESTS": "OFF"
+      }
+    }
+  ]
+}

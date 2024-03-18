@@ -16,3 +16,21 @@ void SubController::setStatus(bool status)
 {
     m_status = status;
 }
+
+void SubController::play()
+{
+    std::cout << "Play " << std::endl;
+
+}
+
+void SubController::stop()
+{
+    std::cout << "stop " << std::endl;
+
+}
+
+void SubController::pause()
+{
+    std::cout << "pause " << std::endl;
+
+}
